@@ -109,10 +109,9 @@ artifactory {
     contextUrl = 'http://elinaf.jfrog.io/artifactory'
     publish {
         repository {
-            repoKey = project.findProperty('artifactoryRepoKey') ?: 'yoavh-gradle-dev-loca'
+            repoKey = project.findProperty('artifactoryRepoKey') ?: 'yoavh-gradle-dev-local'
             username = 'admin'      //The publisher user name
             password = 'Password1!'       //The publisher password
-            maven = true
         }
         defaults {
             publishArtifacts = true
