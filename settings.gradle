@@ -1,0 +1,4 @@
+//rootProject.name = "test-library-name"
+include ':module1'
+
+rootProject.name = "patrol-admin-app"
