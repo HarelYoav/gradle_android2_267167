@@ -4,12 +4,12 @@ buildscript {
         maven {
             url 'https://mvnrepository.com/repos/mulesoft-public'
         }
-        maven { 
-            url 'http://repo1.maven.org/maven2' 
-            allowInsecureProtocol true
-        }
-        mavenCentral()
+        // maven { 
+        //     url 'http://repo1.maven.org/maven2' 
+        //     allowInsecureProtocol true
+        // }
         google()
+        mavenCentral()
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:7.3.1'
