@@ -60,12 +60,12 @@ allprojects {
     }
     project.group = 'pl.ppl'
 
-    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).configureEach {
-        kotlinOptions {
-            jvmTarget = "11"
-            freeCompilerArgs += ["-Xallow-jvm-ir-dependencies", "-Xskip-prerelease-check"]
-        }
-    }
+    // tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).configureEach {
+    //     kotlinOptions {
+    //         jvmTarget = "11"
+    //         freeCompilerArgs += ["-Xallow-jvm-ir-dependencies", "-Xskip-prerelease-check"]
+    //     }
+    // }
 
     sonarqube {
         def branch = System.getenv("GIT_BRANCH") != null ? System.getenv("GIT_BRANCH").replace("/", "__") : ""
