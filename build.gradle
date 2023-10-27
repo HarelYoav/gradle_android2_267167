@@ -84,26 +84,6 @@ subprojects {
 }
 
 
-project('app') {
-    publishing {
-        publications {
-            apk(MavenPublication) {
-                artifact("$buildDir/outputs/apk/real/release/app.apk", {
-                    classifier "real-app"
-                })
-                artifact("$buildDir/outputs/apk/stub/release/app.apk", {
-                    classifier "stub-app"
-                })
-            }
-        }
-    }
-
-    artifactoryPublish {
-        dependsOn('build')
-        publications(publishing.publications.apk)
-    }
-}
-
 project('module1') {
     publishing {
         publications {
